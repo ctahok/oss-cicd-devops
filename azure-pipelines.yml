@@ -10,10 +10,10 @@ variables:
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
-  demorg: 'melon-cicd-rg'
-  subscription : 'melonserviceconn'
-  webappname : 'melonbetawebapp'
-  prodwebappname : 'melonbetawebapp-prod'
+  demorg: 'ij-cicd-rg'
+  subscription : 'Azure_std'
+  webappname : 'ijbetawebapp'
+  prodwebappname : 'ijbetawebapp-prod'
 
 stages:
 - stage: Build
