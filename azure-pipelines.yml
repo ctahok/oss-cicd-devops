@@ -12,8 +12,8 @@ variables:
   vmImageName: 'ubuntu-latest'
   demorg: 'ij-cicd-rg'
   subscription : 'Azure_std'
-  webappname : 'ijbetawebapp'
-  prodwebappname : 'ijbetawebapp-prod'
+  webappname : 'melonybetawebapp'
+  prodwebappname : 'melonybetawebapp-prod'
 
 stages:
 - stage: Build
@@ -30,7 +30,7 @@ stages:
       inputs:
         azureSubscription: $(subscription)
         scriptLocation: inlineScript
-        inlineScript: 'az group create --location northeurope --name $(demorg)'
+        inlineScript: 'az group create --location eastus --name $(demorg)'
 
     
     - task: AzureResourceGroupDeployment@2
